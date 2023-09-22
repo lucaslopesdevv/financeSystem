@@ -1,0 +1,50 @@
+# @name get-users
+GET http://localhost:3333/users
+###
+
+# @name create-user
+POST http://localhost:3333/createUser
+Content-Type: application/json
+
+{
+  "username": "teste-primeiro",
+  "email": "teste-novofulano@hotmail.com",
+  "password": "1234"
+}
+
+###
+# @name get-user-id
+GET http://localhost:3333/user/:userId/update"
+###
+
+###
+# @name update-user
+PUT http://localhost:3333/user/bd29f0ee-c5a2-43ce-89b1-27cd5be124a0/update
+Content-Type: application/json 
+
+{
+  "email": "teste@fulano@hotmail.com",
+  "password": "8895"
+}
+###
+
+# @name create-finance
+POST http://localhost:3333/createFinance
+Content-Type: application/json
+
+{
+  "nameOfBusiness": "teste-terceiro",
+  "valueOfFinance": "R$ 500,00",
+  "recurrence": "Monthly",
+  "status": "Pendente"
+}
+
+###
+# @name get-finances
+GET http://localhost:3333/finances
+###
+
+###
+# @name get-finance-id
+GET http://localhost:3333/finance/894f08ed-fb16-47b6-840d-57e9788493d9
+###
