@@ -16,7 +16,7 @@
   <li>Fastify</li>
 </ul>
 
-### Autor
+### Author
 ---
 
 <a href="https:/lucaslopesdev.com.br">
