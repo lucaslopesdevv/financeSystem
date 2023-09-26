@@ -16,12 +16,13 @@ model User {
 }
 
 model Finance {
-  id             String   @id @default(uuid())
+  id             String @id @default(uuid())
   nameOfBusiness String
   valueOfFinance String
   recurrence     String
   status         String
-  createdAt      DateTime @default(now())
+
+  createdAt DateTime @default(now())
 }
 
 model Salary {

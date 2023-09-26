@@ -14,10 +14,18 @@ CREATE TABLE "Finance" (
     "id" TEXT NOT NULL,
     "nameOfBusiness" TEXT NOT NULL,
     "valueOfFinance" TEXT NOT NULL,
-    "totalAmountOfSalary" TEXT,
     "recurrence" TEXT NOT NULL,
     "status" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Finance_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "Salary" (
+    "id" TEXT NOT NULL,
+    "totalAmountOfSalary" TEXT,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Salary_pkey" PRIMARY KEY ("id")
 );
