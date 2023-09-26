@@ -2,7 +2,7 @@ import { FastifyInstance } from "fastify";
 import { z } from "zod";
 import { prisma } from "../../lib/prisma";
 
-export async function createUser(app: FastifyInstance) {
+export async function createUserRoute(app: FastifyInstance) {
   app.post("/createUser", async (req, res) => {
     const bodySchema = z.object({
       username: z.string().min(1).max(20),

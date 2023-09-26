@@ -1,6 +1,6 @@
 import { fastify } from "fastify";
 import { fastifyCors } from "@fastify/cors";
-import { createUser } from "./routes/user/create-user";
+import { createUserRoute } from "./routes/user/create-user";
 import { getAllUsersRoute } from "./routes/user/get-all-users";
 import { createFinanceRoute } from "./routes/finance/create-finance";
 import { getAllFinanceRoute } from "./routes/finance/get-all-finance";
@@ -15,7 +15,7 @@ app.register(fastifyCors, {
 });
 
 app.register(getAllUsersRoute);
-app.register(createUser);
+app.register(createUserRoute);
 app.register(createFinanceRoute);
 app.register(getAllFinanceRoute);
 

@@ -18,8 +18,9 @@ GET http://localhost:3333/user/:userId/update"
 ###
 
 ###
+f6cc195b-5b7f-49cd-89cc-47b61ab5c6aa
 # @name update-user
-PUT http://localhost:3333/user/bd29f0ee-c5a2-43ce-89b1-27cd5be124a0/update
+PUT http://localhost:3333/user//update
 Content-Type: application/json 
 
 {
