@@ -14,6 +14,7 @@
   <li>Postgres</li>
   <li>Typescript</li>
   <li>Fastify</li>
+  <li>React</li>
 </ul>
 
 ### Author
