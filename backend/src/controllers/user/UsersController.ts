@@ -27,17 +27,19 @@ export class UsersController {
         },
       });
 
-      res.send("Usuário inserido com sucesso");
+      res.send(200);
     } catch (error) {
       console.error("Erro ao criar usuário:", error);
-      res.status(500).send({
+      res.send({
         error: "Erro ao criar usuário",
+        status: 500,
       });
     }
   }
 
   async show(req: any) {
     const users = await prisma.user.findMany();
+
     return users;
   }
 }
